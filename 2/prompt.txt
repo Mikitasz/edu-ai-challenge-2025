@@ -1,0 +1,12 @@
+I am in the middle of QA or development and come across a bug. I wrote down a quick note like:
+“Logout button doesn’t work on Safari. It just doesn’t respond.”
+This kind of informal note is common—but it's not enough for a developer to take action quickly.
+Make clear, well-structured bug ticket. The output should follow this format:
+Title
+Description
+Steps to Reproduce
+Expected vs Actual Behavior
+Environment (if known)
+Severity or Impacts
+
+Make output in md format
