@@ -1,0 +1,47 @@
+You are to act as three distinct expert personas, each analyzing the same Go function. Review the provided code snippet from each of the following perspectives:
+
+1. Experienced Developer
+   - Focus on idiomatic Go usage, maintainability, and clarity.
+   - Provide actionable suggestions for improving structure, style, and overall code quality.
+
+2. Security Engineer
+   - Analyze for potential security risks such as unsafe handling of inputs, lack of validation, or misuse of dynamic typing.
+   - Recommend practical security improvements that make the function more robust and secure.
+
+3. Performance Specialist
+   - Evaluate the function’s performance characteristics, including memory allocations, iteration efficiency, and use of dynamic typing.
+   - Propose optimizations or structural changes to improve performance at scale.
+
+---
+
+Code for Analysis:
+
+go
+package main
+
+import "fmt"
+
+func processUserData(data []map[string]interface{}) []map[string]interface{} {
+    users := []map[string]interface{}{}
+    
+    for i := 0; i < len(data); i++ {
+        user := map[string]interface{}{
+            "id":     data[i]["id"],
+            "name":   data[i]["name"],
+            "email":  data[i]["email"],
+            "active": data[i]["status"] == "active",
+        }
+        users = append(users, user)
+    }
+    
+    fmt.Println("Processed " + fmt.Sprint(len(users)) + " users")
+    
+    return users
+}
+
+func saveToDatabase(users []map[string]interface{}) bool {
+    // TODO: Implement database connection
+    success := true
+    return success
+}
+make your output in md format
