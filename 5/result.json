@@ -1,0 +1,41 @@
+[
+  {
+    "sentiment": "Negative",
+    "isRelevant": true,
+    "mainSubject": "Performance and reliability of the mouse",
+    "positives": [],
+    "painPoints": [
+      "Sensor intermittently stops tracking",
+      "Issue persists even when plugged in",
+      "Defective dongle in initial unit",
+      "High price for unreliable performance"
+    ],
+    "improvementSuggestions": [
+      "Improve sensor consistency",
+      "Ensure dongle reliability",
+      "Justify price with better quality control"
+    ],
+    "featuresMentioned": [
+      "Sensor",
+      "8000hz polling rate",
+      "Dongle"
+    ],
+    "userExpertise": "Experienced"
+  },
+  {
+    "sentiment": "Mixed",
+    "isRelevant": true,
+    "mainSubject": "Value proposition of the product",
+    "positives": [
+      "Flawless performance in user's opinion"
+    ],
+    "painPoints": [
+      "Perceived poor value compared to cheaper alternatives"
+    ],
+    "improvementSuggestions": [
+      "Offer better pricing or highlight differentiating features"
+    ],
+    "featuresMentioned": [],
+    "userExpertise": "Unknown"
+  }
+]
